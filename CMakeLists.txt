@@ -1,0 +1,24 @@
+PROJECT(MicroView)
+
+cmake_minimum_required(VERSION 2.8)
+
+FIND_PACKAGE(VTK)
+FIND_PACKAGE(PythonInterp)
+
+SUBDIRS(src)
+
+IF(NOT DEFINED DIST_DIRECTORY)
+SET(DIST_DIRECTORY "${PROJECT_SOURCE_DIR}/dist")
+MAKE_DIRECTORY(${DIST_DIRECTORY})
+ENDIF(NOT DEFINED DIST_DIRECTORY)
+
+IF(NOT TARGET packages)
+ADD_CUSTOM_TARGET(packages)
+ENDIF()
+
+ADD_DEPENDENCIES(packages MicroView_egg)
+ADD_CUSTOM_TARGET(MicroView_egg
+  ${PYTHON_EXECUTABLE} setup.py bdist_egg --exclude-source-files --dist-dir ${DIST_DIRECTORY}
+)
+ADD_DEPENDENCIES(MicroView_egg "${PROJECT_NAME}Python")
+

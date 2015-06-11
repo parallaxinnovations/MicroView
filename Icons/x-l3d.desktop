@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Life Imaging L3D image
+Hidden=false
+Icon=image-l3d
+MimeType=image/x-l3d
+Patterns=*.l3d;*.L3D
+Type=MimeType

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Value=1.0
+Encoding=UTF-8
+Name=MicroView
+GenericName=Image Viewer
+Comment=2D/3D Image Viewer
+Exec=/opt/PI/MicroView/MicroView %U
+Icon=/opt/PI/MicroView/Icons/parallax-innovations.png
+Categories=Application;Graphics;Scientific;

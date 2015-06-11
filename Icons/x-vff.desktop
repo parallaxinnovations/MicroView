@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=MimeType
+MimeType=image/x-vff
+Icon=vff
+Patterns=*.vff;
+Comment=VFF Image
+X-KDE-AutoEmbed=true
