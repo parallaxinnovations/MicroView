@@ -38,19 +38,15 @@ export LANG='eng_US.UTF-8'
    - [Pillow](https://github.com/python-imaging/Pillow)
    - [wxPython](http://www.wxpython.org)
 
-   .. note:
-   
-       Christoph Gohlke's [repository]http://www.lfd.uci.edu/~gohlke/pythonlibs is an excellent resource
-       for Windows installers, especially for 64-bit architectures
+ Christoph Gohlke's [repository](http://www.lfd.uci.edu/~gohlke/pythonlibs) is an excellent resource
+ for Windows installers, especially for 64-bit architectures
    
 7. Next, for each downloaded installer, run:
 ```bash
 easy_install PACKAGE
 ```
-    .. note::
 
-        [Pillow](pillow.readthedocs.io) may not install correctly unless an environment variable is set.  Under [cygwin](http://www.cygwin.com>), for instance,
-        the following command must be executed before attempting to install::
+[Pillow](pillow.readthedocs.io) may not install correctly unless an environment variable is set.  Under [cygwin](http://www.cygwin.com>), for instance, the following command must be executed before attempting to install::
 ```bash        
 export LANG='eng_US.UTF-8'
 ```
