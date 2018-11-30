@@ -2,35 +2,35 @@ Microview
 ==========
 
 `MicroView` is a 3D image viewer and analysis tool.  It is written in Python and C++ and leverages a variety of open source tools
-including `VTK <http://www.vtk.org>`_, and `wxPython <http://www.wxpython.org>`_.
+including [VTK](http://www.vtk.org), and [wxPython](http://www.wxpython.org).
 
 Build Instructions
 ------------------
 
-1. Download and install `python <http://www.python.org>`_
+1. Download and install [python](http://www.python.org)
 
-2. Install `pip <http://www.pip-installer.org/en/latest/>`_
+2. Install [pip](http://www.pip-installer.org/en/latest/)
 
-3. Install `virtualenv <http://www.virtualenv.org/>`_::
+3. Install [virtualenv](http://www.virtualenv.org/):
 
-   $ pip install virtualenv
+    pip install virtualenv
 
-4. Create a virtualenv environment::
+4. Create a virtualenv environment:
 
-   $ virtualenv MV
+    virtualenv MV
 
-5. Activate the newly created virtualenv environment.  On Windows::
+5. Activate the newly created virtualenv environment.  On Windows:
 
-   > MV\Scripts\activate.bat
+    MV\Scripts\activate.bat
 
-   while on Linux or OSX::
+   while on Linux or OSX:
 
-   $ source bin/activate
+    source bin/activate
 
 6. On Windows, set needed environment variables:
 
-   - if compiling with VS2010 or higher, read and follow `this <http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat>`_ link
-   - set language variable::
+   - if compiling with VS2010 or higher, read and follow [this](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat) link
+   - set language variable:
 
      $ export LANG='eng_US.UTF-8'
 
@@ -38,23 +38,22 @@ Build Instructions
 6. Download `MicroView` dependencies that aren't easily installed with pip.  For each of the following packages,
    download the installer and place in an accessible folder:
 
-   - `numpy <http://www.numpy.org>`_
-   - `scipy <http://www.scipy.org/>`_
-   - `matplotlib <http://www.matplotlib.org>`_
-   - `scikit-image <http://scikit-image.org/>`_
-   - `pywin32 <http://sourceforge.net/projects/pywin32/>`_
-   - `M2Crypto <http://chandlerproject.org/Projects/MeTooCrypto>`_
-   - `Pillow <https://github.com/python-imaging/Pillow>`_
-   - `wxPython <http://www.wxpython.org>`_
+   - [numpy](http://www.numpy.org)
+   - [scipy](http://www.scipy.org)
+   - [matplotlib](http://www.matplotlib.org)
+   - [scikit-image](http://scikit-image.org)
+   - [pywin32](http://sourceforge.net/projects/pywin32)
+   - [Pillow](https://github.com/python-imaging/Pillow)
+   - [wxPython](http://www.wxpython.org)
 
-   .. note::
+   .. note:
    
        Christoph Gohlke's `repository <http://www.lfd.uci.edu/~gohlke/pythonlibs>`_ is an excellent resource
        for Windows installers, especially for 64-bit architectures
    
-7. Next, for each downloaded installer, run::
+7. Next, for each downloaded installer, run:
 
-   $ easy_install PACKAGE
+    easy_install PACKAGE
 
     .. note::
 
@@ -63,9 +62,9 @@ Build Instructions
         
             $ export LANG='eng_US.UTF-8'
 
-8. Install `MicroView` dependencies::
+8. Install `MicroView` dependencies:
 
-   $ pip install -r microview.git/MicroView/requirements.txt
+    pip install -r microview.git/MicroView/requirements.txt
 
 
 
