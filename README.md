@@ -12,28 +12,29 @@ Build Instructions
 2. Install [pip](http://www.pip-installer.org/en/latest/)
 
 3. Install [virtualenv](http://www.virtualenv.org/):
-
-    pip install virtualenv
+```bash
+pip install virtualenv
+```
 
 4. Create a virtualenv environment:
-
-    virtualenv MV
-
+```bash
+virtualenv MV
+```
 5. Activate the newly created virtualenv environment.  On Windows:
-
-    MV\Scripts\activate.bat
-
+```bash
+MV\Scripts\activate.bat
+```
    while on Linux or OSX:
-
-    source bin/activate
-
+```bash
+source bin/activate
+```
 6. On Windows, set needed environment variables:
 
    - if compiling with VS2010 or higher, read and follow [this](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat) link
    - set language variable:
-
-     $ export LANG='eng_US.UTF-8'
-
+```bash
+export LANG='eng_US.UTF-8'
+```
    
 6. Download `MicroView` dependencies that aren't easily installed with pip.  For each of the following packages,
    download the installer and place in an accessible folder:
@@ -52,19 +53,17 @@ Build Instructions
        for Windows installers, especially for 64-bit architectures
    
 7. Next, for each downloaded installer, run:
-
-    easy_install PACKAGE
-
+```bash
+easy_install PACKAGE
+```
     .. note::
 
         `Pillow` may not install correctly unless an environment variable is set.  Under `cygwin <http://www.cygwin.com>`_, for instance,
         the following command must be executed before attempting to install::
-        
-            $ export LANG='eng_US.UTF-8'
-
+```bash        
+export LANG='eng_US.UTF-8'
+```
 8. Install `MicroView` dependencies:
-
-    pip install -r microview.git/MicroView/requirements.txt
-
-
-
+```bash
+pip install -r microview.git/MicroView/requirements.txt
+```
