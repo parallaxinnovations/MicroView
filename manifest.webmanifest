@@ -1,0 +1,16 @@
+{
+    "short_name": "MicroView",
+    "name": "Parallax Innovations MicroView",
+    "icons": [
+      {
+        "src": "./icons/parallax-innovations.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6"
+  }
