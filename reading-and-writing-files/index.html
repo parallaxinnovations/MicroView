@@ -417,6 +417,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#importing-dicom-images" title="Importing DICOM images" class="md-nav__link">
+    Importing DICOM images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#importing-2d-image-slices" title="Importing 2D image slices" class="md-nav__link">
     Importing 2D image slices
   </a>
@@ -731,6 +738,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#importing-dicom-images" title="Importing DICOM images" class="md-nav__link">
+    Importing DICOM images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#importing-2d-image-slices" title="Importing 2D image slices" class="md-nav__link">
     Importing 2D image slices
   </a>
@@ -784,7 +798,7 @@ data, as well as surface geometry formats. A distinction is made between
 reading/writing image data and importing/exporting image data. This
 distinction is reflected in the entries listed in MicroView's File menu.
 File reading and writing reads and writes precisely one file per
-operation (for instance, one might read a <a href="file-formats.md">vff</a> image,
+operation (for instance, one might read a <a href="../appendices/file-formats/">vff</a> image,
 then save it to a different filename in a different format).</p>
 <p>File import and export operations are used to read and write,
 respectively, a sequence of 2D images. Image import is useful for
@@ -804,7 +818,7 @@ single channel (e.g. grayscale images) as well as multichannel (e.g.
 RGBA images) are supported. Currently, multichannel images are
 exclusively interpreted as RGB images.</p>
 <p>The complete list of supported file formats is available in
-<a href="file-formats.md">Appendix A</a> of this document.</p>
+<a href="../appendices/file-formats/">Appendix A</a> of this document.</p>
 <h2 id="loading-an-image">Loading an Image</h2>
 <p>Select <code>File</code> &rarr; <code>Open...</code> from MicroView's menu. Enter a filename, or
 locate a file in the file selector that appears on the screen.</p>
@@ -816,10 +830,13 @@ bottom of file selector dialog and enter a filename for the new image.</p>
 <p>Position the mouse over any 2D viewport, or the main 3D viewport, and
 press the <kbd>t</kbd> key to save a snapshot of the viewport to an image file.
 Select a filename and filetype, then hit OK to save the file.</p>
+<h2 id="importing-dicom-images">Importing DICOM images</h2>
+<p>MicroView has good support for reading DICOM images from local DICOMDIR-formatted collections (such as those commonly created by exporting image data to CD-ROM), as well as from loose DICOM image collections.  If DICOM data comes with a <code>DICOMDIR</code> index file, simply open this index file in MicroView with the <code>File</code> &rarr; <code>Open</code> menu, then use the data browser window to select one or more image series to load.  For other DICOM collections, two options exist for loading data:  1) Images can be <a href="#importing-2d-image-slices">imported</a> using MicroView's import tool, and 2) a <code>DICOMDIR</code> index file can be generated for your data collection.  The latter method offers some flexibility because the generated <code>DICOMDIR</code> file allows you to browse image data quickly again at
+a later date without having to reindex images.</p>
 <h2 id="importing-2d-image-slices">Importing 2D image slices</h2>
-<p><img alt="image" src="../images/import-snap.png" /></p>
+<p><img alt="image" class="mv-image-right mv-image-shadow" src="../images/import-snap.png" /></p>
 <p>MicroView is capable of importing a sequence of 2D images, in a variety
-of common image <a href="file-formats.md">formats</a>, and assembling them into a 3D
+of common image <a href="../appendices/file-formats/">formats</a>, and assembling them into a 3D
 image. In order to accomplish this, each 2D image file must be named
 with a monotonically increasing ordinal.</p>
 <p>Select <code>File</code> &rarr; <code>Image Import...</code> from MicroView's menu. Enter a
@@ -849,7 +866,7 @@ checkbox is checked. Instead of entering a sequence of file names,
 specify the entire filename, and enter x, y and z axis dimensions.</p>
 </div>
 <h2 id="exporting-2d-image-slices">Exporting 2D image slices</h2>
-<p><img alt="image" src="../images/export1-snap.png" /></p>
+<p><img alt="image" class="mv-image-center mv-image-shadow" src="../images/export1-snap.png" /></p>
 <p>Select <code>File</code> &rarr; <code>Image Export...</code> from MicroView's menu. Choose an image
 format from the list provided. The list will vary depending on the image
 depth of the image you are saving. Next, select an output directory to

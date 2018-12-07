@@ -792,7 +792,7 @@ in a variety of places, most visible with volume rendering.</p>
     export format, VOX, WEBP and more. It also radically improves
     support for DICOM (including DICOMDIR), as well as Analyze, and
     MINC. A full list of supported file formats can be found in
-    <a href="file-formats.md">File formats</a>.</li>
+    <a href="../appendices/file-formats/">File formats</a>.</li>
 <li><strong> New filters</strong>: MicroView 2.5.0 supports a wider collection of common
     filters, including: minium, maximum, and median filters. It also
     includes a variety of static and adaptive thresholding and
@@ -802,26 +802,27 @@ in a variety of places, most visible with volume rendering.</p>
 <p><strong> New plugins</strong>:</p>
 <p>MicroView 2.5.0 adds a variety of new plugins including:</p>
 <ul>
-<li><img src="../icons/toolbox.png" height=32 valign=middle>  CT Toolbox: A replacement plugin for the original GE CT
+<li><img alt="image" class="mv-inline-thumb" src="../icons/toolbox.png" /> <a href="../tools-and-plugins/#ct-toolbox">CT Toolbox</a>: A replacement plugin for the original GE CT
     Calibration tool. This plugin contains a variety of useful
     tools for CT image analysis</li>
-<li><img src="../icons/reconstruct.png" height=32 valign=middle>  Reconstruct: A basic front-end to the Parallax Innovations GPU
+<li><img alt="image" class="mv-inline-thumb" src="../icons/reconstruct.png" /> Reconstruct: A basic front-end to the Parallax Innovations GPU
     reconstruction tools. This plugin allows you to monitor
     reconstruction progress on reconstruction compute engines</li>
-<li><img src="../icons/point_picker.png" height=32 valign=middle>  Point-picker: A new plugin that mimics a similar tool in GE's
+<li><img alt="image" class="mv-inline-thumb" src="../icons/point_picker.png" /> <a href="../tools-and-plugins/#point-picker">Point-picker</a>: A new plugin that mimics a similar tool in GE's
     Analysis+ version of MicroView. Useful for recording,
     measuring and manipulating fiducial markers on an image.</li>
-<li><img src="../icons/advanced_roi.png" height=32 valign=middle>  Serial-ROI: A replacement plugin for the original GE 'Advanced
+<li><img alt="image" class="mv-inline-thumb" src="../icons/advanced_roi.png" /> <a href="../tools-and-plugins/#advanced-roi-tool">Advanced ROI</a>: A replacement
+    plugin for the original GE 'Advanced
     ROI' tool. This plugin closely mimics the look-and-feel of
     it's predecessor but lacks some of the more advanced features
     of the original plugin.</li>
-<li><img src="../icons/stock_fill.png" height=32 valign=middle>  Flood-fill Region Grow: A new plugin that mimics GE's original
+<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_fill.png" /> Flood-fill Region Grow: A new plugin that mimics GE's original
     region growing plugin, but with a number of additional
     features.</li>
 <li>Camera Info: Shows camera transform info as well as cut plane
     information. Can load and save both camera and image slice
     orientation information.</li>
-<li>Shell: Perhaps the most powerful tool in MicroView: MicroView
+<li><a href="../tools-and-plugins/#interactive-shell">Interactive Shell</a>: Perhaps the most powerful tool in MicroView: MicroView
     2.5.0 now has an interactive shell, which allows access to
     loaded images as 3D image arrays. A variety of open-source
     packages can be directly used on images including
@@ -832,21 +833,24 @@ in a variety of places, most visible with volume rendering.</p>
 <li>
 <p><strong> Plugin Improvements</strong>:</p>
 <ul>
-<li><img src="../icons/standard_roi.png" height=32 valign=middle>  The standard ROI plugin gains spherical ROI support as well as
-    the ability to rotate ROI primitives</li>
-<li><img src="../icons/info.png" height=32 valign=middle>  The image information plugin now displays DICOM tags for all
-    image types</li>
-<li><img src="../icons/network_local.png" height=32 valign=middle>  The DICOM transfer plugin has been rewritten to natively support
-    DICOM network transfers, rather than relying on 3<sup>rd</sup> party
-    tools. It will automatically detect <a href="https://www.osirix-viewer.com/">Osirix</a> 
-    workstations as well as the <a href="http://www.parallax-innovations.com/image-bank.html">Parallax Image Bank</a>.</li>
-<li><img src="../icons/volume_render.png" height=32 valign=middle>  The Render volume plugin has been rewritten from the ground
+<li><img alt="image" class="mv-inline-thumb" src="../icons/standard_roi.png" /> The
+   <a href="../tools-and-plugins/#standard-roi-tool">Standard ROI</a> plugin gains spherical ROI support as well as the ability to rotate ROI primitives</li>
+<li><img alt="image" class="mv-inline-thumb" src="../icons/info.png" /> The
+    <a href="../tools-and-plugins/#image-information">image information</a> plugin now
+    displays DICOM tags for all image types</li>
+<li><img alt="image" class="mv-inline-thumb" src="../icons/network_local.png" /> The
+    <a href="../tools-and-plugins/#image-transfer-tool">Image transfer</a> plugin has been
+    rewritten to natively support DICOM network transfers, rather than relying on 3<sup>rd</sup>
+    party tools. It will automatically detect <a href="https://www.osirix-viewer.com/">Osirix</a> 
+    workstations as well as the <a href="http://www.parallax-innovations.com/image-bank.html">Parallax Image Bank</a>.  The plugin also understands a
+    number of other transfer mechanisms, such as a faster web-based transfer mechanism for <a href="https://www.orthanc-server.com/">Orthanc</a>.</li>
+<li><img alt="image" class="mv-inline-thumb" src="../icons/volume_render.png" /> The <a href="../tools-and-plugins/#volume-rendering-tool">Render volume</a> plugin has been rewritten from the ground
     up, and now supports GPU-accelerated rendering</li>
-<li><img src="../icons/manage_geometries.png" height=32 valign=middle>  The Geometry manager has been rewritten to support a larger
+<li><img alt="image" class="mv-inline-thumb" src="../icons/manage_geometries.png" /> The <a href="../tools-and-plugins/#manage-geometries">Geometry manager</a> has been rewritten to support a larger
     variety of datatypes. Unstructured grids, vector fields and
     surfaces can now be viewed, with a wider range of viewing
     options.</li>
-<li><img src="../icons/stock_movie.png" height=32 valign=middle>  The movie maker plugin has been rewritten to use OpenCV on all
+<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_movie.png" /> The <a href="../tools-and-plugins/#make-movie">movie maker</a> plugin has been rewritten to use the <a href="https://opencv.org/">OpenCV</a> library on all
     platforms. It has been extended to support combining multiple
     basic sequences together, thus enabling more complicated movie
     generation.</li>
@@ -856,7 +860,7 @@ in a variety of places, most visible with volume rendering.</p>
 <h2 id="supported-platforms">Supported Platforms</h2>
 <h3 id="windows"><i class="fa fa-windows"></i> Windows</h3>
 <p>MicroView is now supported on 32-bit and 64-bit Windows
-(XP/Vista/Win7/Win8) platforms. Versions of Windows prior to Windows XP
+(XP/Vista/Win7/Win8/Win10) platforms. Versions of Windows prior to Windows XP
 are no longer supported.</p>
 <h3 id="linux"><i class="fa fa-linux"></i> Linux</h3>
 <p>MicroView is now supported on Centos, Fedora and Ubuntu
@@ -866,7 +870,7 @@ example, MicroView Ubuntu binaries are currently available for Ubuntu
 18.04 LTS (Bionic Beaver) and Ubuntu 16.04 LTS (Xenial Xerus).</p>
 <h3 id="mac-os-x"><i class="fa fa-apple"></i> Mac OS X</h3>
 <p>MicroView is now supported on 64-bit Intel Mac platforms, starting with
-OS X 10.8. PPC platforms will no longer be supported.</p>
+OS X 10.8.  PPC platforms will no longer be supported.</p>
                 
                   
                 
