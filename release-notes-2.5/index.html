@@ -478,10 +478,82 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Tools and Applications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Tools and Applications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roi-manager/" title="ROI Manager" class="md-nav__link">
+      ROI Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../simple-tools/" title="Simple Tools" class="md-nav__link">
+      Simple Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bone-app/" title="Bone Analysis Application" class="md-nav__link">
+      Bone Analysis Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../image-registration/" title="Image Registration Application" class="md-nav__link">
+      Image Registration Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../tools-and-plugins/" title="Tools and Plugins" class="md-nav__link">
       Tools and Plugins
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -804,10 +876,10 @@ in a variety of places, most visible with volume rendering.</p>
 <ul>
 <li><img alt="image" class="mv-inline-thumb" src="../icons/toolbox.png" /> <a href="../tools-and-plugins/#ct-toolbox">CT Toolbox</a>: A replacement plugin for the original GE CT
     Calibration tool. This plugin contains a variety of useful
-    tools for CT image analysis</li>
-<li><img alt="image" class="mv-inline-thumb" src="../icons/reconstruct.png" /> Reconstruct: A basic front-end to the Parallax Innovations GPU
+    tools for CT image analysis.</li>
+<li><img alt="image" class="mv-inline-thumb" src="../icons/reconstruct.png" /> <a href="../tools-and-plugins/#reconstruct">Reconstruct</a>: A basic front-end to the Parallax Innovations GPU
     reconstruction tools. This plugin allows you to monitor
-    reconstruction progress on reconstruction compute engines</li>
+    reconstruction progress on reconstruction compute engines.</li>
 <li><img alt="image" class="mv-inline-thumb" src="../icons/point_picker.png" /> <a href="../tools-and-plugins/#point-picker">Point-picker</a>: A new plugin that mimics a similar tool in GE's
     Analysis+ version of MicroView. Useful for recording,
     measuring and manipulating fiducial markers on an image.</li>
@@ -816,28 +888,33 @@ in a variety of places, most visible with volume rendering.</p>
     ROI' tool. This plugin closely mimics the look-and-feel of
     it's predecessor but lacks some of the more advanced features
     of the original plugin.</li>
-<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_fill.png" /> Flood-fill Region Grow: A new plugin that mimics GE's original
+<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_fill.png" /> <a href="../tools-and-plugins/#flood-fill-region-grow">Flood-fill Region Grow</a>: A new plugin that mimics GE's original
     region growing plugin, but with a number of additional
     features.</li>
-<li>Camera Info: Shows camera transform info as well as cut plane
+<li><img alt="image" class="mv-inline-thumb" src="../icons/camera.png" /> <a href="../tools-and-plugins/#camera-info">Camera Info</a>: Shows camera transform info as well as cut plane
     information. Can load and save both camera and image slice
     orientation information.</li>
-<li><a href="../tools-and-plugins/#interactive-shell">Interactive Shell</a>: Perhaps the most powerful tool in MicroView: MicroView
+<li><img alt="image" class="mv-inline-thumb" src="../icons/terminal.png" /> <a href="../tools-and-plugins/#interactive-shell">Interactive Shell</a>: Perhaps the most powerful tool in MicroView: MicroView
     2.5.0 now has an interactive shell, which allows access to
     loaded images as 3D image arrays. A variety of open-source
     packages can be directly used on images including
     <a href="http://www.numpy.org">Numpy</a> and
     <a href="http://www.scipy.org">Scipy</a>.</li>
+<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_rescale.png" /> <a href="../tools-and-plugins/#rescale-image">Rescale Image</a>: Use this plugin to apply linear transformations to voxel
+    values in an image.</li>
+<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_math.png" /> <a href="../tools-and-plugins/#image-math">Image Math</a>: Perform simple mathematical operations (e.g. addition, subtraction,
+    multiply, divide) on an image using either scalar constants or pixel-by-pixel
+    operations when provided with a second image.</li>
+<li><img alt="image" class="mv-inline-thumb" src="../icons/filter.png" /> <a href="../tools-and-plugins/#data-conduit">Data Conduit</a>:  Import data from IDL&trade; and Matlab&trade; datasets.</li>
 </ul>
 </li>
 <li>
 <p><strong> Plugin Improvements</strong>:</p>
 <ul>
 <li><img alt="image" class="mv-inline-thumb" src="../icons/standard_roi.png" /> The
-   <a href="../tools-and-plugins/#standard-roi-tool">Standard ROI</a> plugin gains spherical ROI support as well as the ability to rotate ROI primitives</li>
+   <a href="../tools-and-plugins/#standard-roi-tool">Standard ROI</a> plugin gains spherical ROI support as well as the ability to rotate ROI primitives.</li>
 <li><img alt="image" class="mv-inline-thumb" src="../icons/info.png" /> The
-    <a href="../tools-and-plugins/#image-information">image information</a> plugin now
-    displays DICOM tags for all image types</li>
+    <a href="../tools-and-plugins/#image-information">image information</a> plugin now displays DICOM tags for all image types.</li>
 <li><img alt="image" class="mv-inline-thumb" src="../icons/network_local.png" /> The
     <a href="../tools-and-plugins/#image-transfer-tool">Image transfer</a> plugin has been
     rewritten to natively support DICOM network transfers, rather than relying on 3<sup>rd</sup>
@@ -845,12 +922,12 @@ in a variety of places, most visible with volume rendering.</p>
     workstations as well as the <a href="http://www.parallax-innovations.com/image-bank.html">Parallax Image Bank</a>.  The plugin also understands a
     number of other transfer mechanisms, such as a faster web-based transfer mechanism for <a href="https://www.orthanc-server.com/">Orthanc</a>.</li>
 <li><img alt="image" class="mv-inline-thumb" src="../icons/volume_render.png" /> The <a href="../tools-and-plugins/#volume-rendering-tool">Render volume</a> plugin has been rewritten from the ground
-    up, and now supports GPU-accelerated rendering</li>
+    up, and now supports GPU-accelerated rendering.</li>
 <li><img alt="image" class="mv-inline-thumb" src="../icons/manage_geometries.png" /> The <a href="../tools-and-plugins/#manage-geometries">Geometry manager</a> has been rewritten to support a larger
     variety of datatypes. Unstructured grids, vector fields and
     surfaces can now be viewed, with a wider range of viewing
     options.</li>
-<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_movie.png" /> The <a href="../tools-and-plugins/#make-movie">movie maker</a> plugin has been rewritten to use the <a href="https://opencv.org/">OpenCV</a> library on all
+<li><img alt="image" class="mv-inline-thumb" src="../icons/stock_movie.png" /> The <a href="../tools-and-plugins/#make-movie">Movie Maker</a> plugin has been rewritten to use the <a href="https://opencv.org/">OpenCV</a> library on all
     platforms. It has been extended to support combining multiple
     basic sequences together, thus enabling more complicated movie
     generation.</li>

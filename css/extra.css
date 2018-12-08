@@ -6,14 +6,18 @@
 
 .mv-image-right {
     float: right;
-    padding: 2px;
+    padding: 10px;
   }
 
+.mv-image-40 {
+    width: 40%;
+}
+
+.mv-image-50 {
+    width: 50%;
+}
 
 .mv-image-60 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 60%;
 }
 

@@ -1,0 +1,1148 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="MicroView 3D Image Viewer">
+      
+      
+        <link rel="canonical" href="https://microview.parallax-innovations.com/image-registration/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/parallax-favico.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Image Registration Application - MicroView</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.11e41852.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../manifest.webmanifest">
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#image-registration-and-fusion-application" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://microview.parallax-innovations.com" title="MicroView" class="md-header-nav__button md-logo">
+          
+            <img src="../svg/parallax-logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                MicroView
+              </span>
+              <span class="md-header-nav__topic">
+                Image Registration Application
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/parallaxinnovations/MicroView/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://microview.parallax-innovations.com" title="MicroView" class="md-nav__button md-logo">
+      
+        <img src="../svg/parallax-logo.svg" width="48" height="48">
+      
+    </a>
+    MicroView
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/parallaxinnovations/MicroView/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../requirements/" title="System Requirements" class="md-nav__link">
+      System Requirements
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../downloads/" title="Downloads" class="md-nav__link">
+      Downloads
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Release Notes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Release Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../release-notes-2.5/" title="MicroView 2.5.0 Release Notes" class="md-nav__link">
+      MicroView 2.5.0 Release Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../screen-layout/" title="Screen Layout" class="md-nav__link">
+      Screen Layout
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../interacting-with-microview/" title="Interacting with MicroView" class="md-nav__link">
+      Interacting with MicroView
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../reading-and-writing-files/" title="Reading and Writing Image Files" class="md-nav__link">
+      Reading and Writing Image Files
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../microview-options/" title="MicroView Application Settings" class="md-nav__link">
+      MicroView Application Settings
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../roi-management/" title="Managing 2D and 3D Regions of Interest (ROI)" class="md-nav__link">
+      Managing 2D and 3D Regions of Interest (ROI)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" checked>
+    
+    <label class="md-nav__link" for="nav-12">
+      Tools and Applications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Tools and Applications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roi-manager/" title="ROI Manager" class="md-nav__link">
+      ROI Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../simple-tools/" title="Simple Tools" class="md-nav__link">
+      Simple Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bone-app/" title="Bone Analysis Application" class="md-nav__link">
+      Bone Analysis Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Image Registration Application
+      </label>
+    
+    <a href="./" title="Image Registration Application" class="md-nav__link md-nav__link--active">
+      Image Registration Application
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-register-tool" title="Using the Register Tool" class="md-nav__link">
+    Using the Register Tool
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-images-and-layout-setup" title="Loading Images and Layout Setup" class="md-nav__link">
+    Loading Images and Layout Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#landmark-registration" title="Landmark Registration" class="md-nav__link">
+    Landmark Registration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualization" title="Visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronized-view" title="Synchronized View" class="md-nav__link">
+    Synchronized View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fusion" title="Fusion" class="md-nav__link">
+    Fusion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools-and-plugins/" title="Tools and Plugins" class="md-nav__link">
+      Tools and Plugins
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../report-generation/" title="Report Generation" class="md-nav__link">
+      Report Generation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Extending MicroView
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Extending MicroView
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev/scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev/plugin-architecture/" title="Plugin Architecture" class="md-nav__link">
+      Plugin Architecture
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq/" title="Frequently Asked Questions" class="md-nav__link">
+      Frequently Asked Questions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../copyright/" title="Copyright Notices" class="md-nav__link">
+      Copyright Notices
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
+    
+    <label class="md-nav__link" for="nav-17">
+      Appendices
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-17">
+        Appendices
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../appendices/file-formats/" title="File Formats" class="md-nav__link">
+      File Formats
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../appendices/memory-performance/" title="Memory Performance" class="md-nav__link">
+      Memory Performance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../appendices/raw-import-notes/" title="Raw Image Data Support" class="md-nav__link">
+      Raw Image Data Support
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../bibliography/" title="Bibliography" class="md-nav__link">
+      Bibliography
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../a/adora/" title="Adora" class="md-nav__link">
+      Adora
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../playground/" title="Playground" class="md-nav__link">
+      Playground
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-register-tool" title="Using the Register Tool" class="md-nav__link">
+    Using the Register Tool
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-images-and-layout-setup" title="Loading Images and Layout Setup" class="md-nav__link">
+    Loading Images and Layout Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#landmark-registration" title="Landmark Registration" class="md-nav__link">
+    Landmark Registration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualization" title="Visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronized-view" title="Synchronized View" class="md-nav__link">
+    Synchronized View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fusion" title="Fusion" class="md-nav__link">
+    Fusion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/parallaxinnovations/MicroView/edit/master/docs/image-registration.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="image-registration-and-fusion-application"><img alt="image" class="mv-inline-thumb" src="../icons/register.png" /> Image Registration and Fusion Application</h1>
+<h2 id="overview">Overview</h2>
+<p>Image registration is the process of finding a spatial transform that
+co-aligns two images, such that homologous features in both images (i.e.
+identical landmarks in the two distinct images) are given the same
+spatial coordinate. This is commonly performed so that the two images
+may be displayed superimposed together (i.e. fused) in a fashion that
+makes corresponding features easily viewed and identified. MicroView's
+register tool is designed for manual landmark registration. Manual
+landmark registration involves picking two sets of homologous landmarks
+from so-called "fixed" and "moving" images. A simple sum of least
+squares fitting algorithm is then used to determine the transformation
+to map the moving image to the coordinate system of the fixed image
+based on the landmarks selected.</p>
+<p>There is an option in this registration tool that allows the user to
+select the type of transform to be performed. The options are rigid
+body, similarity, and full affine transformations.</p>
+<p>Once images are registered they can be visualized through
+synchronization and/or fusion. For example, an image gathered from a
+positron emission tomography (PET) scanner provides functional
+information whereas an image obtained from a computed tomography (CT)
+scanner provides information regarding the structure and anatomy of the
+specimen. Synchronization and fusion will correlate the structural and
+functional information.</p>
+<h2 id="using-the-register-tool">Using the Register Tool</h2>
+<p>Activate the Register Tool by selecting <code>Plugins</code> &rarr; <code>Register...</code> from
+MicroView's menu or by clicking on the Register button in the
+Applications group of MicroView's toolbar. The registration process is
+divided into the following 3 main steps:</p>
+<ul>
+<li>Loading Images and Layout Setup</li>
+<li>Landmark Registration</li>
+<li>Visualization</li>
+</ul>
+<p>Notice that a toggle button appears beside the window/level slides when
+the Register Tool is activated.</p>
+<p><img alt="image" class="mv-image-center" src="../images/register-win-lev.png" /></p>
+<p>Click on the button to toggle the control of the window/level slides to
+the left and right images.</p>
+<h3 id="loading-images-and-layout-setup">Loading Images and Layout Setup</h3>
+<p><img alt="image" class="mv-image-right mv-image-50 mv-image-shadow" src="../images/register-page1.png" /></p>
+<ul>
+<li>Click the <code>Images &amp; Layout</code> tab to activate this page.</li>
+<li>Using the <code>Fixed Image</code> drop-down selector, choose an image from the
+    list of loaded images.</li>
+<li>Use the <code>Moving Image</code> drop-down selector to select a second, moving
+    image target.</li>
+<li>Select the views desired in the <code>Synchronize Image Layouts</code> section and
+    click the <code>Set</code> button to update the display. The view settings can be changed at any time during the registration process.</li>
+</ul>
+<h3 id="landmark-registration">Landmark Registration</h3>
+<p>Landmarks</p>
+<p>Click on the <code>Register</code> tab to activate this page.</p>
+<p><img alt="image" class="mv-image-center mv-image-shadow" src="../images/register-page2.png" /></p>
+<p>The following are typical steps to do landmark registrations:</p>
+<ul>
+<li>To select landmarks on images, position the cursor over a landmark
+    in either image and then press the <span class="keys"><kbd class="key-space">Space</kbd></span> on the keyboard. Do
+    the same to the other image to find the corresponding landmark. The
+    selected pair of landmarks are shown as orange marks. At the same
+    time, the coordinates of the landmarks are displayed in a row in the
+    table on the left panel, which is highlighted in orange color and
+    begins with a <code>?</code> mark. These two landmarks can be moved around by
+    moving the mouse to new positions and then pressing the <span class="keys"><kbd class="key-space">Space</kbd></span>.
+     Zoom in on the images if required to fine-tune the locations of the
+    landmarks. Sometimes, it may be easier to locate the corresponding
+    landmarks in a oblique view. Use the 3D view to manipulate the image
+    and get oblique views.</li>
+<li>To record the pair of landmarks that are selected in previous step,
+    click the Accept button, or press the <span class="keys"><kbd class="key-enter">Enter</kbd></span> key. This pair of
+    landmarks will be displayed as red marks to indicate that they are
+    accepted and recorded. The recorded landmarks may not be moved
+    around. However, they can be deleted and replaced by a new pair.</li>
+<li>Repeat the above two steps to find more pairs of landmarks. There is
+    no upper limit for the number of landmarks that may be selected.
+    However, a minimum of 3 pairs of landmarks must be selected for 2D
+    images and at least 4 pairs of landmarks must be selected for 3D
+    images. Once enough landmarks have been selected a transformation
+    matrix is automatically calculated to register the moving image on
+    left to the fixed image on the right. The initially disabled
+    Transformed View check box becomes enabled.</li>
+<li>Check the Transformed View check box to switch the moving image to
+    the transformed view. At this stage, it may be sufficient to skip to
+    the visualization section and examine the registration result. If
+    the result is not satisfactory, continue on to the following steps.</li>
+<li>Select more landmarks to improve the registration. The additional
+    landmarks on the moving image could be picked either in its original
+    view or the transformed view. Switch back and forth between original
+    and transformed views by checking and unchecking the Transformed
+    View check box. Notice the contents of the second (landmark
+    coordinates on the right) and third (distance) columns also change
+    when the view is changed. Examining the distance column in the
+    transformed view could help one to find the pair of landmarks that
+    contribute the largest RMS error for the registration. The RMS value
+    is the root mean square of the distances between each landmark
+    pairs. This value is displayed under the <code>Landmarks</code> table.</li>
+<li>Landmarks can be reviewed and/or deleted by selecting the
+    corresponding row in the <code>Landmarks</code> table. Click the left mouse
+    button on a row to highlight it. Click the Delete button to delete
+    the highlighted row and the corresponding landmarks on the images.
+    All of the landmarks can be deleted at once by clicking the Delete
+    All button.</li>
+<li>
+<p>By default, the rigid-body transform is used for the registration.
+    If the rigid-body transform is not sufficient for the registration,
+    switch to another type of transform by changing the drop-down
+    selection from the <code>Transformation Matrix</code> section:</p>
+<ul>
+<li><code>Rigid Body (6 Parameters)</code> is a type of transformation with 6
+    degrees of freedom (ie. 3 for rotation and 3 for translation).</li>
+<li>
+<p><code>Similarity (7 Parameters)</code> is a type of transformation with 7
+    degrees of freedom (ie. 3 for rotation, 3 for translation, and 1
+    for uniform scale).</p>
+</li>
+<li>
+<p><code>Full Affine (12 Parameters)</code> is a transformation with 12 degrees of
+freedom (ie. 3 for rotation, 3 for translation, 3 for scale, and 3
+for shear).</p>
+</li>
+</ul>
+<p>Note that the more parameters the transformation matrix uses, the
+more landmarks are needed to get a good result.</p>
+</li>
+<li>
+<p>Landmarks may be added or removed after switching the transformation
+    type. Once done, go to the <code>Visualization</code> page to review the
+    registration result. When satisfied, the results can be saved in
+    one, two or all of the following three ways:</p>
+<ul>
+<li>Landmark tags: save the landmark coordinates by clicking the
+    Save... button in the <code>Landmarks</code> section of the dialog. The
+    landmarks can be loaded at a later time by clicking the Load...
+    button in the <code>Landmarks</code> section.</li>
+<li>Resampled image: save the transformed (i.e., registered) moving
+    image on the right pane to a file by clicking the Save... button
+    in the <code>Transformed View</code> section. Tri-cubic interpolation is
+    used to resample the transformed image.</li>
+<li>Transformation matrix: save the transformation matrix by
+    clicking the Save... button in the <code>Transformation Matrix</code>
+    section. This saved transformation can be applied at a later
+    time to the moving image by clicking the Load... button in the
+    <code>Transformation Matrix</code> section.</li>
+</ul>
+</li>
+</ul>
+<h3 id="visualization">Visualization</h3>
+<p><img alt="image" class="mv-image-60 mv-image-center mv-image-shadow" src="../images/register-page3.png" /></p>
+<p>Click on the <code>Visual</code> tab to activate this page.</p>
+<p>The visualization tools in this application serve two purposes. One is
+to visually evaluate the registration result and the other is to help
+user to correlate the information from the two images, e.g., the
+structural and functional information.</p>
+<h3 id="synchronized-view">Synchronized View</h3>
+<p>Checking the <code>Synchronized View</code> check box synchronizes the two displayed
+images. The synchronized interactions on the images include:</p>
+<ul>
+<li>Gray scale values for both images are displayed when moving the
+    cursor.</li>
+<li>Synchronized viewing angle.</li>
+<li>Synchronized zooming and panning.</li>
+<li>Synchronized slicing through the images (including Page-Up and
+    Page-Down).</li>
+<li>Synchronized landmarks. Moving the cursor over a point of interest
+    in either the fixed or moving images and then pressing the
+    <span class="keys"><kbd class="key-space">Space</kbd></span> on the keyboard will activate the pair of orange colored
+    landmarks. This feature can be used to do point-by-point comparison
+    for the two registered images.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Remember to uncheck the Synchronized View check box before going back to
+the landmark page and selecting additional landmarks.</p>
+</div>
+<h3 id="fusion">Fusion</h3>
+<p>Fusion</p>
+<p>The moving image can be fused on to the fixed image by checking the
+Fusion View check box. Once the Fusion View check box is checked,
+additional controls will appear in the dialog.</p>
+<ul>
+<li>The <code>Min Level</code> and <code>Max Level</code> sliders determine the range of gray
+    scale values that get mapped to colors. The moving image will be
+    transparent outside this range.</li>
+<li>If the <code>Ramp Opacity</code> option is checked then the opacity of the
+    moving image is ramped exponentially. Otherwise the opacity is
+    constant and is determined by the <code>Opacity</code> slider.</li>
+<li>There are several different color tables to select from. A color
+    table is a mapping of gray scale values to RGB color values.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Synchronized view and fused views are designed to be used for two
+registered images, or at least two spatially overlapped images in the
+world-coordinates (the patient space). Trying to synchronize or fuse two
+spatially unrelated images will result in unexpected behaviors.</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../bone-app/" title="Bone Analysis Application" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Bone Analysis Application
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tools-and-plugins/" title="Tools and Plugins" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tools and Plugins
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2011-2019 Parallax Innovations
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/parallaxinnovations/MicroView" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/parallaxinnovat" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company/parallax-innovations" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://plus.google.com/+Parallax-innovations" class="md-footer-social__link fa fa-google-plus-square"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.9e1f3b71.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

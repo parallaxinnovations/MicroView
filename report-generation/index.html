@@ -397,10 +397,82 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Tools and Applications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Tools and Applications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roi-manager/" title="ROI Manager" class="md-nav__link">
+      ROI Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../simple-tools/" title="Simple Tools" class="md-nav__link">
+      Simple Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bone-app/" title="Bone Analysis Application" class="md-nav__link">
+      Bone Analysis Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../image-registration/" title="Image Registration Application" class="md-nav__link">
+      Image Registration Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../tools-and-plugins/" title="Tools and Plugins" class="md-nav__link">
       Tools and Plugins
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -489,6 +561,33 @@
           <li class="md-nav__item">
   <a href="#pdf" title="PDF" class="md-nav__link">
     PDF
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fat-analysis-application" title="Fat Analysis Application" class="md-nav__link">
+    Fat Analysis Application
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-fat-analysis-application" title="Using the Fat Analysis Application" class="md-nav__link">
+    Using the Fat Analysis Application
   </a>
   
 </li>
@@ -771,6 +870,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#fat-analysis-application" title="Fat Analysis Application" class="md-nav__link">
+    Fat Analysis Application
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-fat-analysis-application" title="Using the Fat Analysis Application" class="md-nav__link">
+    Using the Fat Analysis Application
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -816,7 +942,7 @@ about the region of interest used to generate the analysis. The other
 tabs provide the individual measurement data for each tool in a simple
 spreadsheet view. If there is no analysis data for a particular tool,
 the spreadsheet view for that tool is empty.</p>
-<p><img alt="image" class="mv-image-center" src="../images/reportgen1.png" /></p>
+<p><img alt="image" class="mv-image-center mv-image-shadow" src="../images/reportgen1.png" /></p>
 <p>Three of the spreadsheet data tables have an additional dropdown control
 on them. These tables are for the Direct Measures, Stereology and
 Cortical tools. In each of these tables, there is additional data that
@@ -939,6 +1065,76 @@ analyses that can be performed on the image data.</p>
 <p>When exporting the data for an entire project to PDF, each different
 project entry will generate a separate report, contained in the same
 file. The data is thus separated, and cannot be compared easily.</p>
+<h2 id="fat-analysis-application">Fat Analysis Application</h2>
+<h3 id="overview_1">Overview</h3>
+<p>MicroView's Fat Analysis Application performs a simple volumetric
+analysis of the total volume and fat contained within a specified region
+of interest. The tool is able to simultaneously analyze multiple
+<a href="../roi-management/">ROI</a>'s. It is possible to export the results to any or all of the
+following formats: plain text, CSV, Excel, or PDF.</p>
+<h3 id="using-the-fat-analysis-application">Using the Fat Analysis Application</h3>
+<p><img alt="image" class="mv-image-center" src="../images/snap-advancedanalysis1.png" /></p>
+<ul>
+<li>Activate the Fat Analysis Application by selecting
+    <code>Analyze</code> &rarr; <code>Fat Analysis...</code> from MicroView's menu, or by clicking
+    on the Fat Analysis button in the Applications group of MicroView's
+    <a href="../screen-layout/#toolbar">toolbar</a>.</li>
+<li>The Fat Analysis Application can analyze one or more <a href="../roi-management/">ROI</a>s
+    simultaneously. These ROIs can be generated using any ROI tool
+    available in MicroView. To keep more than one ROI in memory at any
+    given time, use the <a href="../tools-and-plugins/#roi-manager">ROI Manager</a>
+    to manage and store these objects.</li>
+<li>The Auto Outline tool can be used to automatically find an ROI that
+    defines the entire body of the animal within the image. For the best
+    results, this tool assumes that there is no bed visible in the
+    image, that the body of the animal does not touch the edges of the
+    image, and that the image has a dark background with a bright
+    animal. The result is automatically added to the list in the ROI
+    Manager, and is set as the selected ROI for the first region to
+    analyze in the Fat Analysis Application.</li>
+<li>To add or delete ROIs for analysis, use the Add or Delete buttons as
+    appropriate. As at least one ROI must be analyzed, it is not
+    possible to delete the first region to analyze.</li>
+<li>Rename the regions to be analyzed as appropriate. These names will
+    be used in the output generated by the application. When adding new
+    regions, a default name will be assigned.</li>
+<li>
+<p>Select the Analysis tab.</p>
+</li>
+<li>
+<p>Enter the threshold range that is representative of fat in the image
+    to be analyzed. A histogram of the image can be used for assistance.
+    This will open MicroView's <a href="../tools-and-plugins/#histogram-window">Histogram</a> tool.
+    If a region is highlighted in the histogram tool, the bounding values of this
+    range will be transfered automatically to the Fat Analysis
+    Application.</p>
+</li>
+<li>
+<p>Turn on the Fill Single Voxel Holes option if desired. In this case,
+    the six cardinal neighbours of each voxel are examined. If all six
+    neighbours are considered fat, there is a strong probability that
+    the central voxel is also fat, even if it is outside of the
+    threshold range specified above. Turning this option on will
+    classify these voxels as fat in the calculations performed.</p>
+</li>
+<li>
+<p>In the Output Options section select the name of the file where the
+    results will be stored. The results are written to an XML database
+    file. These results are presented for review in a custom spreadsheet
+    view. The spreadsheet tools are identical to the ones used in the
+    <a href="../bone-app/#advanced-bone-analysis-application">Advanced Bone Analysis Application</a>. This
+    spreadsheet view allows the results to be exported to one of the
+    supported file formats (text, CSV, Excel, PDF). If no project file
+    name is provided, the analysis cannot be performed. It is also
+    possible to select an existing database file using the Load Project
+    button. The new results can then be added to this database. More
+    information regarding the project database can be found
+    <a href="#report_generation">here</a>.</p>
+</li>
+<li>
+<p>Click the Run button.</p>
+</li>
+</ul>
                 
                   
                 
