@@ -633,13 +633,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-region-grow-tool" title="Advanced Region Grow Tool" class="md-nav__link">
-    Advanced Region Grow Tool
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#slab-project" title="Slab Project" class="md-nav__link">
     Slab Project
   </a>
@@ -755,27 +748,15 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../report-generation/" title="Report Generation" class="md-nav__link">
-      Report Generation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-14">
+    <label class="md-nav__link" for="nav-13">
       Extending MicroView
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-14">
+      <label class="md-nav__title" for="nav-13">
         Extending MicroView
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -841,13 +822,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
     
-    <label class="md-nav__link" for="nav-17">
+    <label class="md-nav__link" for="nav-16">
       Appendices
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-17">
+      <label class="md-nav__title" for="nav-16">
         Appendices
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1078,13 +1059,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#advanced-region-grow-tool" title="Advanced Region Grow Tool" class="md-nav__link">
-    Advanced Region Grow Tool
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#slab-project" title="Slab Project" class="md-nav__link">
     Slab Project
   </a>
@@ -1249,8 +1223,8 @@ generate the rendering.</p>
 <ul>
 <li>A graphical view that presents the image histogram, the opacity and
     color ramp and a representation of the LUT. The view can be
-    controlled in the same fashion as the <a href="#histogram-window">histogram</a> or
-    <a href="#plotting">2D profile plot</a> windows. Additionally, this view
+    controlled in the same fashion as the <a href="../simple-tools/#histogram-window">histogram</a> or
+    <a href="../simple-tools/#plotting">2D profile plot</a> windows. Additionally, this view
     contains a number of control points connected by a line. These
     control points are represented by either a blue (inactive) or red
     (active) dot and can be manipulated as outlined below.</li>
@@ -1659,7 +1633,7 @@ use the tool:</p>
 <li>Press the Update button to display/update the isosurface. Press the
     Clear to hide the surface.</li>
 </ul>
-<h3 id="image-resample-tool"><img alt="image" class="mv-inline-thumb" src="../icons/stock_resample.png" /> Image Resample Tool</h3>
+<h3 id="image-resample-tool"><img alt="image" class="mv-image-border mv-inline-thumb" src="../icons/stock_resample.png" /> Image Resample Tool</h3>
 <p><img alt="image" class="mv-image-50 mv-image-right mv-image-shadow" src="../images/resample-example.gif" /></p>
 <p>MicroView's <code>Resample Image</code> plugin can perform image resampling on a loaded
 image.  Image resampling changes the dimensions of the image and can both
@@ -1680,6 +1654,15 @@ select <code>Process</code> &rarr; <code>Resample Image...</code> from the main 
 station. It can also browse and download into memory images from a number of
 remote viewing platforms.  Certain stations can be automatically detected, while others
 must be manually configured.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>MicroView requires <a href="https://en.wikipedia.org/wiki/Zero-configuration_networking">Zeroconf</a>
+to automatically detect image servers on your network.  This software is
+automatically available on OS X computers, and is bundled with the MicroView
+installer software on Windows computers.  For Linux computers, MicroView
+communicates with the "Avahi" daemon through a compatability library.  Make sure
+that <code>dnssd_compat</code> is installed (e.g. on Ubuntu, run <code>sudo apt get libavahi-compat-libdnssd1</code>)</p>
+</div>
 <p>To activate the tool, select <code>Tools</code> &rarr; <code>Dicom Transfer...</code> from the main
 menu.</p>
 <ul>
@@ -1779,60 +1762,6 @@ information box. Press the <span class="keys"><kbd class="key-enter">Enter</kbd>
 the <span class="keys"><kbd class="key-escape">Esc</kbd></span> key to cancel your edit session. Editing values in this way
 does not modify the contents of the original image file on disk -- you
 must explicitly save the image in order to preserve your changes.</p>
-<h3 id="advanced-region-grow-tool">Advanced Region Grow Tool</h3>
-<p><img alt="image" src="../images/advanced-region-grow-snap.png" /></p>
-<p>The Advanced Region Grow tool allows the user to define a ROI in a 2D or
-3D image based on the connectedness of voxels with similar intensity
-values. Once defined, the region grown ROI may be used as MicroView's
-<a href="./#standard-roi-tool">default ROI</a> for further analysis. The tool extends the
-capabilities of the Region Grow tool, allowing the early termination of
-the growth based on a given number of iterations. It also provides the
-user with a mean of determining the smoothness of the final selected
-region.</p>
-<p>The starting point for using the Advanced Region Grow tool is typically
-the selection of a simple ROI, to constrain the region growing process.
-Selecting a small rectangular ROI around the object to be segmented will
-reduce the memory and time required to perform the region grow
-operation. Advanced Region Grow can be used without selecting a
-constraining ROI, but the time and memory required will be greater.</p>
-<p>Once a constraining ROI has been selected, the following operations must
-be performed to use the region grow tool:</p>
-<ul>
-<li>Activate the tool by choosing <code>Tools</code> &rarr; <code>Advanced Region Grow...</code>
-    from the main menu.</li>
-<li><a href="../interacting-with-microview/">Move</a> one of the 3D viewplanes so that
-    it intersects the constraining ROI. Select a plane that clearly
-    shows a slice of the object you wish to segment.</li>
-<li>Temporarily set the Window value for the main window to 1. Adjust
-    the Level value so that the loaded image is displayed in black and
-    white. Choose a setting such that the feature to be segmented is
-    displayed in white.</li>
-<li>Select a threshold option from the available list. If segmenting a
-    bright object from a darker background, select "upper". If
-    segmenting a dark object from a brighter background, select "lower".
-    Choose "window" to segment connected pixels in a range of gray-level
-    values surrounding the current level scrollbar value.</li>
-<li>Choose the number of times Region Grow should occur by providing the
-    "Number of Iterations" parameter in the plug-in. A higher number
-    would result in the final selected region to be larger. This
-    parameter should be changed based on the result obtained. Adjusting
-    this value would allow the user to stop the tool from selecting
-    undesired regions.</li>
-<li>Pick a starting point (e.g. a pick point) for the region grow
-    operation by positioning the mouse cursor over the object of
-    interest within the constraining ROI. Hit the <span class="keys"><kbd class="key-space">Space</kbd></span> key to select
-    the 3D point.</li>
-</ul>
-<p>Once a pick point has been selected, the Advanced Region Grow tool will
-determine a set of connected voxels. The tool will highlight this
-collection of voxels in green in both the 3D and 2D viewports. In the
-results section of the region grow tool, the volume and centroid of the
-group of voxels will be displayed. Press the View Centroid button to
-move the 3D cut-planes so that they intersect at the centroid of the
-selected ROI. Press the <code>Geometry</code> &rarr; <code>ROI</code> to assign the results of this
-tool to the default ROI for further analysis. Once assigned, the green
-highlighted voxels will turn yellow, indicating the new choice of
-system-wide ROI.</p>
 <h3 id="slab-project">Slab Project</h3>
 <p>The Slab Project tool accumulates images from a collection of image
 slices surrounding the currently image planes and displays them using
@@ -1958,7 +1887,9 @@ number, which is displayed on each image's Viewer tab.</p>
 <h3 id="data-conduit"><img alt="image" class="mv-inline-thumb" src="../icons/filter.png" /> Data Conduit</h3>
 <p>The <code>Data Conduit</code> plugin allows loading image data from select IDL&trade; and Matlab&trade; data files.  The plugin requires additional software to operate and will prompt and download the add-on software the first time it is used.</p>
 <h3 id="rescale-image"><img alt="image" class="mv-inline-thumb" src="../icons/stock_rescale.png" /> Rescale Image</h3>
-<p>Rescale Image.</p>
+<p>MicroView's <code>Rescale Image</code> plugin performs simple linear transformations on pixel
+values, that is, it can transform pixels by an offset and scale factor.  The plugin can be
+useful, for instance, in converting CT image data into Hounsfield units.</p>
 <p><img alt="image" class="mv-image-40 mv-image-shadow" src="../images/rescale-image.png" /></p>
 <h3 id="reconstruct"><img alt="image" class="mv-inline-thumb" src="../icons/reconstruct.png" /> Reconstruct</h3>
 <p>Reconstruct.</p>
@@ -1966,11 +1897,21 @@ number, which is displayed on each image's Viewer tab.</p>
 <p>Flood-fill region grow.</p>
 <p><img alt="image" class="mv-image-shadow" src="../images/region-grow-snap.png" /></p>
 <h3 id="image-math"><img alt="image" class="mv-inline-thumb" src="../icons/stock_math.png" /> Image Math</h3>
-<p>Image math.</p>
-<p><img alt="image" class="mv-image-40 mv-image-shadow" src="../images/image_math.gif" /></p>
+<p><img alt="image" class="mv-image-40 mv-image-right mv-image-shadow" src="../images/image_math.gif" /></p>
+<p>The <code>Image Math</code> plugin can be used to perform simple binary operations
+on a loaded image.  At a minimum, one image must be selected in the <code>Image #1</code> dropdown
+choicebox.  Depending on the selected operation, the second dropbown choice box can be
+used to either select a constant value or a second image.  The plugin generates an output
+image, rather than overwriting it's input arguments, and the name of this output image
+can be selected in the Output &rarr; Name text box.</p>
 <h3 id="camera-info"><img alt="image" class="mv-inline-thumb" src="../icons/camera.png" /> Camera Info</h3>
-<p>Camera info.</p>
-<p><img alt="image" class="mv-image-50 mv-image-shadow" src="../images/camera-info.png" /></p>
+<p><img alt="image" class="mv-image-40 mv-image-shadow" src="../images/camera-info.png" /></p>
+<p>The <code>Camera and Transformation Info</code> plugin displays information about MicroView's
+3D viewport.  The <code>Camera</code> section displays info about position and orientation of
+the viewer within the 3D image scene.  The <code>Image</code> section provides information about
+how the 3D image is being sliced and transformed.  The orientation information can be
+saved and reloaded into MicroView, which allows scene layouts to be saved and restored
+at a later time.</p>
                 
                   
                 
@@ -2006,13 +1947,13 @@ number, which is displayed on each image's Viewer tab.</p>
           </a>
         
         
-          <a href="../report-generation/" title="Report Generation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../dev/scripting/" title="Scripting" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Report Generation
+                Scripting
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
