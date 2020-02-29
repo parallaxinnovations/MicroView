@@ -641,6 +641,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../copyright/" title="Copyright Notices" class="md-nav__link">
       Copyright Notices
     </a>
@@ -654,13 +666,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
     
-    <label class="md-nav__link" for="nav-16">
+    <label class="md-nav__link" for="nav-17">
       Appendices
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-16">
+      <label class="md-nav__title" for="nav-17">
         Appendices
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -882,24 +894,34 @@ Select a filename and filetype, then hit OK to save the file.</p>
 <p>MicroView has good support for reading DICOM images from local DICOMDIR-formatted collections (such as those commonly created by imaging tools that export image data to CD-ROM), as well as from loose DICOM image collections.  If DICOM data comes with a <code>DICOMDIR</code> index file, simply open this index file in MicroView with the <code>File</code> &rarr; <code>Open</code> menu, then use the data browser window to select one or more image series to load.  For other DICOM collections, two options exist for loading data:  1) Images can be <a href="#importing-2d-image-slices">imported</a> using MicroView's import tool, and 2) a <code>DICOMDIR</code> index file can be generated for your data collection.  The latter method offers some flexibility because the generated <code>DICOMDIR</code> file allows you to browse image data quickly again at
 a later date without having to reindex images.</p>
 <h2 id="importing-2d-image-slices">Importing 2D image slices</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of 2020-01-08 filename matching template behaviour has changed.  Take care to read the following documentation carefully.</p>
+</div>
 <p><img alt="image" class="mv-image-right mv-image-shadow" src="../images/import-snap.png" /></p>
-<p>MicroView is capable of importing a sequence of 2D images, in a variety
-of common image <a href="../appendices/file-formats/">formats</a>, and assembling them into a 3D
-image. In order to accomplish this, each 2D image file must be named
-with a monotonically increasing ordinal.</p>
-<p>Select <code>File</code> &rarr; <code>Image Import...</code> from MicroView's menu. Enter a
-filename template, in the format <code>import-####.png</code>, where "#" denotes
-characters that will be automatically replaced by index numbers. The
-<code>Browse</code> button to the right of the template filename box can be used to
-select a file from a file browser. Hit the <code>Examine</code> button to permit
-MicroView to examine metadata for all images found in the selected
-folder. Enter the first index number and last index number in the
-appropriate entry boxes (e.g. if the template is chosen to be
-<code>"import-##.gif"</code> and first and last numbers are set to be 3 and 7,
-respectively, MicroView will attempt to load <code>import-03.gif</code>,
-<code>import-04.gif</code>... <code>import-07.gif</code>). Enter the spacing between image
-slices, in millimeters. Finally, press the <code>OK</code> button to import the
-sequence of images.</p>
+<p>MicroView is capable of importing a sequence of 2D images, in a variety of common image <a href="../appendices/file-formats/">formats</a>, and assembling them into either a 3D
+image (with fixed z-slice spacing) or a stack of spatial or temporally related 2D slices. In order to accomplish this, each 2D image file must be named
+in a sequence that can be described with one or more wildcard characters.  In earlier versions of MicroView, the collection of filenames needed to conform to fairly rigid
+rules:  sequencing of filenames needed to be monotonic and could only increase by one digit per file.  Newer releases relax this constraint significantly.</p>
+<p>Select <code>File</code> &rarr; <code>Image Import...</code> from MicroView's menu. Enter a filename template, in the format <code>import-*.png</code>, where "*" denotes
+a wildcard that matches one or more numeric characters . The <code>Browse</code> button to the right of the template filename box can be used to
+select a file from a file browser. Hit the <code>Examine</code> button to permit MicroView to examine metadata for all images found in the selected
+folder -- an import template will be automatically generated to match all the images in the selected folder for you.  If possible, pixel or voxel spacing values will also be automatically updated. First and last number indices will be updated according to the number of files that match the current template.</p>
+<p>If needed, adjust the <code>First number</code> and <code>Last number</code> in the appropriate entry boxes to constrain the set of files loaded (e.g. if a
+subsection of existing files on disk is desired to be loaded).  The first and last number are 0-based index numbers into the list of existing files.
+Enter the spacing between image slices, in millimeters. Finally, press the <code>OK</code> button to import the sequence of images.  Note also, hitting the <code>Update</code> button
+will show a preview of a slice of image data using the current settings:  this is most useful when loading raw image data as a check on dimensions and data format.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>If the template specified ends with <code>import-*.png</code> and files <code>import-004.png</code>, <code>import-006.png</code> and <code>import-007.png</code> are present in the specified folder, <code>First number</code> will automatically be set to 0, while <code>Last number</code> will be set to 2.  The first and last index numbers control the list of filenames used <em>based on files present on disk</em> so selecting <code>First</code>and <code>Last</code> numbers as 1 and 2, here, would mean only <code>import-006.png</code> and <code>import-007.png</code> would be considered.  <code>First</code> and <code>Last</code> numbers are <em>indices into the list of existing files  on disk</em> rather than generators of a list of filenames directly.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Previous versions of MicroView operated in a slightly different fashion:  Assuming a template ending with <code>import-###.png</code> and <code>First</code> and <code>Last</code> indices set to 0
+and 2, MicroView would attempt to load files <code>import-0000.png</code>, <code>import-0001.png</code> and <code>import-0002.png</code>.  That is, characters marked by '#' would be replaced by a
+numeric value which starts at <code>First</code>, then monotonically increased until <code>Last</code> is reached.  This pattern replacement has nothing to do with files that are actually
+on disk and is more restrictive than the newer methodology.</p>
+</div>
 <h3 id="importing-raw-images">Importing Raw Images</h3>
 <p>MicroView can also import raw data in a variety of forms. Start by
 clicking the Raw Image button to display additional image import
@@ -1014,8 +1036,6 @@ format that you select, and a prefix of "export-" (e.g.
       <a href="https://twitter.com/parallaxinnovat" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="https://www.linkedin.com/company/parallax-innovations" class="md-footer-social__link fa fa-linkedin"></a>
-    
-      <a href="https://plus.google.com/+Parallax-innovations" class="md-footer-social__link fa fa-google-plus-square"></a>
     
   </div>
 

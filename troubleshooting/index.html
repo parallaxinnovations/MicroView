@@ -13,7 +13,7 @@
         <meta name="description" content="MicroView 3D Image Viewer">
       
       
-        <link rel="canonical" href="http://microview.parallax-innovations.com/playground/">
+        <link rel="canonical" href="http://microview.parallax-innovations.com/troubleshooting/">
       
       
       
@@ -40,7 +40,7 @@
     
     
       
-        <title>Playground - MicroView</title>
+        <title>Troubleshooting - MicroView</title>
       
     
     
@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#troubleshooting" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -121,7 +125,7 @@
                 MicroView
               </span>
               <span class="md-header-nav__topic">
-                Playground
+                Troubleshooting
               </span>
             
           
@@ -536,11 +540,55 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Troubleshooting
+      </label>
+    
+    <a href="./" title="Troubleshooting" class="md-nav__link md-nav__link--active">
       Troubleshooting
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#missing-plot-log-windows" title="Missing plot / log windows" class="md-nav__link">
+    Missing plot / log windows
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -647,48 +695,64 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#missing-plot-log-windows" title="Missing plot / log windows" class="md-nav__link">
+    Missing plot / log windows
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/parallaxinnovations/MicroView/edit/master/docs/playground.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/parallaxinnovations/MicroView/edit/master/docs/troubleshooting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Playground</h1>
-                
-                <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-massa, nec semper lorem quam in massa.</p>
-</div>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
-</pre></div>
-
-
-<div>
-<div class="MathJax_Preview">
-\frac{n!}{k!(n-k)!} = \binom{n}{k}
-</div>
-<script type="math/tex; mode=display">
-\frac{n!}{k!(n-k)!} = \binom{n}{k}
-</script>
-</div>
-<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-delete">Del</kbd></span></p>
-<p><img alt="😄" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f604.png" title=":smile:" /></p>
-<blockquote>
-<p>block quite <br>
-This is a new line <br></p>
-</blockquote>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>use a <code>---</code> seperator or <code>&lt;br&gt;</code>
-if you want multiple sepearte block quotes</p>
-</div>
-<div class="row">hello</div>
-
-<div class="row">world</div>
+                <h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="missing-plot-log-windows">Missing plot / log windows</h2>
+<p>MicroView keeps track of last window position and screen layout in an internal database.  This can lead to certain windows not showing on
+the visible screen if e.g. a computer sometimes has two monitors and other times has only one.</p>
+<p>To fix this issue:</p>
+<ul>
+<li>Start MicroView</li>
+<li>Select Help &rarr; Open User directory</li>
+<li>Select Persistence_Options file in file browser</li>
+<li>Exit MicroView</li>
+<li>Remove the Persistence_Options file</li>
+<li>Start MicroView again</li>
+</ul>
                 
                   
                 
@@ -701,9 +765,9 @@ if you want multiple sepearte block quotes</p>
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "http://microview.parallax-innovations.com/playground/";
+      this.page.url = "http://microview.parallax-innovations.com/troubleshooting/";
       this.page.identifier =
-        "/playground/";
+        "/troubleshooting/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -721,6 +785,41 @@ if you want multiple sepearte block quotes</p>
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../faq/" title="Frequently Asked Questions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Frequently Asked Questions
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../copyright/" title="Copyright Notices" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Copyright Notices
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
