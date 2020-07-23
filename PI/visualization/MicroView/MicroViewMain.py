@@ -3463,7 +3463,7 @@ class MicroViewMainFrame(wx.Frame, wx.FileDropTarget):
         return 0
 
     def RegSetOrthoCenter(self, position):
-        """Set the ortho center of the slave"""
+        """Set the ortho center of the subordinate"""
         self.pane3D.GetOrthoPlanes().SetOrthoCenter(position)
         self.pane3D.GetRenderWindow().Render()
 
