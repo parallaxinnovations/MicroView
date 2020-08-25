@@ -302,7 +302,7 @@ class MicroViewRenderPane(RenderPane.RenderPane):
                 self._stockicons.getMenuBitmap('stock_arrow_%s' % l))
             menu.AppendItem(item)
 
-        self._master.PopupMenu(menu)
+        self._main.PopupMenu(menu)
         menu.Destroy()
 
     def DoCameraZoom(self, evt):
@@ -617,7 +617,7 @@ class MicroViewRenderPane(RenderPane.RenderPane):
 
         try:
             origin = self.GetMicroView().ImageData.GetOrigin()
-            EditingAllowed = self.slave.RegPickPointVol2(x, y, z, origin)
+            EditingAllowed = self.subordinate.RegPickPointVol2(x, y, z, origin)
         except:
             return
 
