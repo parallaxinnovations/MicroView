@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../images/parallax-favico.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-3.1.0">
     
     
       
@@ -62,6 +62,8 @@
     
       <link rel="manifest" href="../manifest.webmanifest">
     
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     
       <link rel="stylesheet" href="../css/extra.css">
     
@@ -1199,7 +1201,7 @@
                 <h1 id="tools-and-plugins">Tools and Plugins</h1>
 <p>This section describes the various extension plugins which are available
 for MicroView.</p>
-<h2 id="volume-rendering-tool"><img alt="img" class="mv-inline-thumb" src="../icons/volume_render.png" /> Volume Rendering Tool</h2>
+<h2 id="volume-rendering-tool"><img alt="img" class="mv-inline-thumb" src="./icons/volume_render.png" /> Volume Rendering Tool</h2>
 <h3 id="overview">Overview</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/raycast_example.png" /></p>
 <div class="admonition note">
@@ -1239,7 +1241,7 @@ function to determine the final pixel color in the image scene.</p>
     greatest level of control over the raycast scene.</li>
 </ul>
 <h3 id="microviews-rendering-interface">MicroView's Rendering Interface</h3>
-<p><img alt="image" class="mv-image-shadow" src="../images/render-vis+-snap.png" /></p>
+<p><img alt="image" class="mv-image-shadow" src="../images/render-vis%2B-snap.png" /></p>
 <p>MicroView's volume rendering interface allows the user to control the
 type of rendering to generate and the parameters that will be used to
 generate the rendering.</p>
@@ -1424,7 +1426,7 @@ planes in the 3-D view pane to represent the axes of the desired output
 image. Once satisfied with the displayed axes, select
 <code>File</code> &rarr; <code>Save Reoriented Image...</code> to save the reoriented image to a
 file.</p>
-<h3 id="standard-roi-tool"><img alt="image" class="mv-inline-thumb" src="../icons/standard_roi.png" /> Standard ROI Tool</h3>
+<h3 id="standard-roi-tool"><img alt="image" class="mv-inline-thumb" src="./icons/standard_roi.png" /> Standard ROI Tool</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/roi-snap.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1462,7 +1464,7 @@ a ROI of a specific size or position is needed.</p>
     primitives. Rotate image planes in order to take advantage of this
     feature.</li>
 </ul>
-<h3 id="advanced-roi-tool"><img alt="image" class="mv-inline-thumb" src="../icons/advanced_roi.png" /> Advanced ROI Tool</h3>
+<h3 id="advanced-roi-tool"><img alt="image" class="mv-inline-thumb" src="./icons/advanced_roi.png" /> Advanced ROI Tool</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/advancedroi-snap.png" /></p>
 <p>Advanced ROI Tool is used to generate a 3D region of interest (ROI) from
 a series of stacked 2D ROIs. The purpose of this tool is to allow the
@@ -1579,8 +1581,7 @@ Advanced Options... to access these options.
     not be undone.</li>
 </ul>
 <!-- #if cortical_bone_roi -->
-
-<h3 id="cortical-bone-roi-tool"><img alt="image" class="mv-inline-thumb" src="../icons/cortical_bone_roi.png" /> Cortical Bone ROI Tool</h3>
+<h3 id="cortical-bone-roi-tool"><img alt="image" class="mv-inline-thumb" src="./icons/cortical_bone_roi.png" /> Cortical Bone ROI Tool</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/cortical-bone-segmentation.png" /></p>
 <p>When applied to a CT image of a bone, this tool can be used to select a
 ROI corresponding to either the cortical shell or the trabecular space
@@ -1620,10 +1621,11 @@ window, or by selecting <code>Tools</code> &rarr; <code>Cortical ROI...</code> f
     button to invert the ROI selection -- i.e. select the trabecular
     bone region as a ROI.</li>
 <li>Use the Align to Principal Axes button to rotate the axis planes to
-    be aligned with the principal axes of the segmented cortical bone
-<!-- #endif --></li>
+    be aligned with the principal axes of the segmented cortical bone</li>
 </ul>
-<h3 id="isosurface-tool"><img alt="image" class="mv-inline-thumb" src="../icons/isosurface.png" /> Isosurface Tool</h3>
+<!-- #endif -->
+
+<h3 id="isosurface-tool"><img alt="image" class="mv-inline-thumb" src="./icons/isosurface.png" /> Isosurface Tool</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/isosurface-snap.png" /></p>
 <p>MicroView's isosurface tool can be used to extract a surface from a 3D
 image that corresponds to a user-defined gray-level value. Activate the
@@ -1657,7 +1659,7 @@ use the tool:</p>
 <li>Press the Update button to display/update the isosurface. Press the
     Clear to hide the surface.</li>
 </ul>
-<h3 id="image-resample-tool"><img alt="image" class="mv-image-border mv-inline-thumb" src="../icons/stock_resample.png" /> Image Resample Tool</h3>
+<h3 id="image-resample-tool"><img alt="image" class="mv-image-border mv-inline-thumb" src="./icons/stock_resample.png" /> Image Resample Tool</h3>
 <p><img alt="image" class="mv-image-50 mv-image-right mv-image-shadow" src="../images/resample-example.gif" /></p>
 <p>MicroView's <code>Resample Image</code> plugin can perform image resampling on a loaded
 image.  Image resampling changes the dimensions of the image and can both
@@ -1672,7 +1674,7 @@ select <code>Process</code> &rarr; <code>Resample Image...</code> from the main 
 <li>Press the Resample and Save... button to resample the image and save
     it to disk.</li>
 </ul>
-<h3 id="image-transfer-tool"><img alt="image" class="mv-inline-thumb" src="../icons/network_local.png" /> Image Transfer Tool</h3>
+<h3 id="image-transfer-tool"><img alt="image" class="mv-inline-thumb" src="./icons/network_local.png" /> Image Transfer Tool</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/dicom-snap.png" /></p>
 <p>MicroView can transfer a loaded image to a compatible DICOM viewing
 station. It can also browse and download into memory images from a number of
@@ -1701,7 +1703,7 @@ menu.</p>
     able to provide default values based on the image loaded.</li>
 <li>Finally, hit the Send Image button to transfer the image.</li>
 </ul>
-<h3 id="manage-geometries"><img alt="image" class="mv-inline-thumb" src="../icons/manage_geometries.png" /> Manage Geometries</h3>
+<h3 id="manage-geometries"><img alt="image" class="mv-inline-thumb" src="./icons/manage_geometries.png" /> Manage Geometries</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>MicroView 2.5.0 features an overhauled interface for handling point,
@@ -1739,7 +1741,7 @@ to generate ROI objects.</p>
     transparent (e.g. invisible), while a value of 1.0 indicates the
     surface is completely opaque.</li>
 </ul>
-<h3 id="image-information"><img alt="image" class="mv-inline-thumb" src="../icons/info.png" /> Image Information</h3>
+<h3 id="image-information"><img alt="image" class="mv-inline-thumb" src="./icons/info.png" /> Image Information</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/info-snap.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1815,7 +1817,7 @@ older versions of MicroView.</p>
     image. Snapshot images are always 8-bit images, and take advantage
     of the current window/level settings in the slab project window.</li>
 </ul>
-<h3 id="ct-toolbox"><img alt="image" class="mv-inline-thumb" src="../icons/toolbox.png" /> CT Toolbox</h3>
+<h3 id="ct-toolbox"><img alt="image" class="mv-inline-thumb" src="./icons/toolbox.png" /> CT Toolbox</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/ctcalibration-snap.png" /></p>
 <p>The CT Toolbox plugin consists of a collection of tools, useful for
 day-to-day analysis of CT image data. The plugin can be used to:</p>
@@ -1848,7 +1850,7 @@ determine air, water and bone calibration constants.</p>
     settings have been saved, click one of the Load buttons and the
     corresponding ROI will appear.</li>
 </ul>
-<h3 id="make-movie"><img alt="image" class="mv-inline-thumb" src="../icons/stock_movie.png" /> Make Movie</h3>
+<h3 id="make-movie"><img alt="image" class="mv-inline-thumb" src="./icons/stock_movie.png" /> Make Movie</h3>
 <p><img alt="image" class="mv-image-shadow" src="../images/moviemaker-snap.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1882,7 +1884,7 @@ controlled by using stationary snapshots. Select
 <li>Finally, close and finish generating the movie by clicking the
     <code>Finish</code> button.</li>
 </ul>
-<h3 id="point-picker"><img alt="image" class="mv-inline-thumb" src="../icons/point_picker.png" /> Point Picker</h3>
+<h3 id="point-picker"><img alt="image" class="mv-inline-thumb" src="./icons/point_picker.png" /> Point Picker</h3>
 <p><img alt="image" class="mv-image-center mv-image-shadow" src="../images/measurement-tool.png" /></p>
 <p>MicroView's point picker tool is used to make a set of landmark
 measurements on an image, and to save these measurements to disk. Start
@@ -1904,23 +1906,23 @@ Once loaded:</p>
 <li>Additional support for the display of a rectangular-shaped ROI about
     each landmark is available</li>
 </ul>
-<h3 id="interactive-shell"><img alt="image" class="mv-inline-thumb" src="../icons/terminal.png" /> Interactive Shell</h3>
+<h3 id="interactive-shell"><img alt="image" class="mv-inline-thumb" src="./icons/terminal.png" /> Interactive Shell</h3>
 <p><img alt="image" class="mv-image-60 mv-image-center mv-image-shadow" src="../images/interactive-shell-1.gif" /></p>
 <p>From MicroView's interactive shell, images can be interrogated and manipulated easily.  The toplevel python variable <code>images</code> is a list of images, indexed by each loaded images tab
 number, which is displayed on each image's Viewer tab.</p>
-<h3 id="data-conduit"><img alt="image" class="mv-inline-thumb" src="../icons/filter.png" /> Data Conduit</h3>
+<h3 id="data-conduit"><img alt="image" class="mv-inline-thumb" src="./icons/filter.png" /> Data Conduit</h3>
 <p>The <code>Data Conduit</code> plugin allows loading image data from select IDL&trade; and Matlab&trade; data files.  The plugin requires additional software to operate and will prompt and download the add-on software the first time it is used.</p>
-<h3 id="rescale-image"><img alt="image" class="mv-inline-thumb" src="../icons/stock_rescale.png" /> Rescale Image</h3>
+<h3 id="rescale-image"><img alt="image" class="mv-inline-thumb" src="./icons/stock_rescale.png" /> Rescale Image</h3>
 <p>MicroView's <code>Rescale Image</code> plugin performs simple linear transformations on pixel
 values, that is, it can transform pixels by an offset and scale factor.  The plugin can be
 useful, for instance, in converting CT image data into Hounsfield units.</p>
 <p><img alt="image" class="mv-image-40 mv-image-shadow" src="../images/rescale-image.png" /></p>
-<h3 id="reconstruct"><img alt="image" class="mv-inline-thumb" src="../icons/reconstruct.png" /> Reconstruct</h3>
+<h3 id="reconstruct"><img alt="image" class="mv-inline-thumb" src="./icons/reconstruct.png" /> Reconstruct</h3>
 <p>Reconstruct.</p>
-<h3 id="flood-fill-region-grow"><img alt="image" class="mv-inline-thumb" src="../icons/stock_fill.png" /> Flood-fill Region Grow</h3>
+<h3 id="flood-fill-region-grow"><img alt="image" class="mv-inline-thumb" src="./icons/stock_fill.png" /> Flood-fill Region Grow</h3>
 <p>Flood-fill region grow.</p>
 <p><img alt="image" class="mv-image-shadow" src="../images/region-grow-snap.png" /></p>
-<h3 id="image-math"><img alt="image" class="mv-inline-thumb" src="../icons/stock_math.png" /> Image Math</h3>
+<h3 id="image-math"><img alt="image" class="mv-inline-thumb" src="./icons/stock_math.png" /> Image Math</h3>
 <p><img alt="image" class="mv-image-40 mv-image-right mv-image-shadow" src="../images/image_math.gif" /></p>
 <p>The <code>Image Math</code> plugin can be used to perform simple binary operations
 on a loaded image.  At a minimum, one image must be selected in the <code>Image #1</code> dropdown
@@ -1928,7 +1930,7 @@ choicebox.  Depending on the selected operation, the second dropbown choice box 
 used to either select a constant value or a second image.  The plugin generates an output
 image, rather than overwriting it's input arguments, and the name of this output image
 can be selected in the Output &rarr; Name text box.</p>
-<h3 id="camera-info"><img alt="image" class="mv-inline-thumb" src="../icons/camera.png" /> Camera Info</h3>
+<h3 id="camera-info"><img alt="image" class="mv-inline-thumb" src="./icons/camera.png" /> Camera Info</h3>
 <p><img alt="image" class="mv-image-40 mv-image-shadow" src="../images/camera-info.png" /></p>
 <p>The <code>Camera and Transformation Info</code> plugin displays information about MicroView's
 3D viewport.  The <code>Camera</code> section displays info about position and orientation of
@@ -2009,7 +2011,7 @@ at a later time.</p>
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2011-2020 Parallax Innovations
+            Copyright &copy; 2011-2021 Parallax Innovations
           </div>
         
         powered by
@@ -2023,11 +2025,11 @@ at a later time.</p>
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
-      <a href="https://github.com/parallaxinnovations/MicroView" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/parallaxinnovations/MicroView" class="md-footer-social__link fa fa-"></a>
     
-      <a href="https://twitter.com/parallaxinnovat" class="md-footer-social__link fa fa-twitter"></a>
+      <a href="https://twitter.com/parallaxinnovat" class="md-footer-social__link fa fa-"></a>
     
-      <a href="https://www.linkedin.com/company/parallax-innovations" class="md-footer-social__link fa fa-linkedin"></a>
+      <a href="https://www.linkedin.com/company/parallax-innovations" class="md-footer-social__link fa fa-"></a>
     
   </div>
 
@@ -2040,9 +2042,11 @@ at a later time.</p>
     
       <script src="../assets/javascripts/application.9e1f3b71.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
       
     
     

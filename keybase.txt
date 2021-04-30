@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jgill
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://microview.parallax-innovations.com
+  * I am jgill (https://keybase.io/jgill) on keybase.
+  * I have a public key ASCh1y8yq-LiKSfYZVRVn84VRNOhopAza7CIckGy8iz_cwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ceefaf882b92594cdf09be84fb7ff663842f7ca614d279c58a2142148d78428b0a",
+      "host": "keybase.io",
+      "kid": "0120a1d72f32abe2e22927d86554559fce1544d3a1a290336bb0887241b2f22cff730a",
+      "uid": "ea9b4f3f8c70bc89f9f56fc598897819",
+      "username": "jgill"
+    },
+    "merkle_root": {
+      "ctime": 1619747148,
+      "hash": "4cae84275f1dee5d0cbcc3b8b8a0649b104b32e3ceb46309b9bd4e3924c3c1996c0e36de01ba89b01cd8d2bd827fd17c916ecc3c3d04213cf0c85d2ddbc98471",
+      "hash_meta": "b0152a53238daf8be775d40fd96c33e237406d262ad6934c1420df0dc8a4a143",
+      "seqno": 19786707
+    },
+    "service": {
+      "entropy": "2+MTyTccQ75GwxxmL1/t90RE",
+      "hostname": "microview.parallax-innovations.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.2"
+  },
+  "ctime": 1619747947,
+  "expire_in": 504576000,
+  "prev": "084fb411df8cb9be6f0bbd9c5b03ddb84a20af94aaa9f2022585ceb0e342068f",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgodcvMqvi4ikn2GVUVZ/OFUTToaKQM2uwiHJBsvIs/3MKp3BheWxvYWTESpcCHcQgCE+0Ed+Mub5vC72cWwPduEogr5SqqfICJYXOsONCBo/EIOu6RkpcNKFKoxyQKzthI0tOt40L3No5YCRd9Cjc2QHNAgHCo3NpZ8RAc5QZmkSlETrVmDTFtz6BYfRL8u1MbmiyCneqsbm4iE6KghS5E/quKjhhsj0bq79wBqyhYAFHS32v+8bQWdCFBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAE3RnAja6J8yMc80iZsSzHNhRdtUrL1cS6csatd7ZUGo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jgill
+
+==================================================================
